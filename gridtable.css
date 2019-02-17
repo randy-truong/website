@@ -1,7 +1,7 @@
 .Row
 {
     display: table;
-    width: 70%;
+    width: 75%;
     table-layout: fixed;
     border-spacing: 10px;
 }
