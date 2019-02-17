@@ -4,6 +4,7 @@
     width: 75%;
     table-layout: fixed;
     border-spacing: 10px;
+    margin: 0 auto;
 }
 .Column
 {
