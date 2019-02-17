@@ -28,7 +28,14 @@
         <br>
         <div class="imgs">
             <div class="left i">
-                <img src="img/img1.jpg">
+                <img src="img/img1.jpg" style="width:30%;cursor:zoom-in"
+                onclick="document.getElementById('modal01').style.display='block'">
+                
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img src="img/img1.jpg" style="width:100%">
+                
                 <br>
                 <br><!--Insert Text Here -->
                 <br>
