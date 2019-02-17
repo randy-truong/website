@@ -80,7 +80,7 @@ a {
         margin: 0 auto;
     }
 }
-@media all and (max-width: 640px) {
+@media all and (max-width: 540px) {
     .navbar span {
         display: none;
     }
