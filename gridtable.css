@@ -5,9 +5,14 @@
     table-layout: fixed;
     border-spacing: 10px;
     margin: 0 auto;
-    white-space: nowrap;
 }
 .Column
 {
     display: table-cell;
+}
+
+td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
 }
