@@ -8,9 +8,10 @@
       <h2>W3.CSS Modal Image Gallery</h2>
       <p>Click on the images to display them in full size.</p>
     </div>
+    
         <div class="w3-row">
             <div class="w3-col s6 w3-center">
-                <div class="w3-row-padding w3-display-left">
+                <div class="w3-row-padding w3-display-middle">
                     <div class="w3-container w3-quarter">
                       <img src="img/img1.jpg" style="width:100%;cursor:pointer" 
                       onclick="onClick(this)" class="w3-hover-opacity">
@@ -29,8 +30,8 @@
                     </div>
                 </div>
             </div>   
-             <div class="w3-col s6 w3-center">   
-                 <div class="w3-row-padding w3-display-right">
+            <div class="w3-col s6 w3-center">   
+                 <div class="w3-row-padding w3-display-middle">
                     <div class="w3-container w3-quarter">
                       <img src="img/img1.jpg" style="width:100%;cursor:pointer" 
                       onclick="onClick(this)" class="w3-hover-opacity">
@@ -49,16 +50,15 @@
                     </div>
                 </div> 
             </div>
-        </div>                    
-                           
-    </div>
+       </div>                    
+                          
 
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
           <!--<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>-->
           <div class="w3-modal-content w3-animate-zoom">
             <img id="img01" style="width:100%">
           </div>
-    </div>
+       </div>
 
         <script>
         function onClick(element) {
