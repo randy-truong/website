@@ -52,7 +52,7 @@ hr {
 img {
     /*width: 100%;
     height: 200%;*/
-    object-fit: contain;
+    object-fit: scale-down;
 }
 .i {
     font-weight: 100;
