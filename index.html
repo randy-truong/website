@@ -8,10 +8,10 @@
 <body>
 
     <div class="w3-bar w3-black">
-      <a href="#" class="w3-bar-item w3-button">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">PROJECTS</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">CINEMATOGRAPHY & PHOTOGRAPHY</a>
+      <a href="#" class="w3-bar-item w3-button">HOME</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">ABOUT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">CINEMATOGRAPHY & PHOTOGRAPHY</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">PROJECTS</a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
     </div>
 
@@ -108,6 +108,17 @@
         function onClick(element) {
           document.getElementById("img01").src = element.src;
           document.getElementById("modal01").style.display = "block";
+        }
+        </script>
+    
+        <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
         }
         </script>
             
