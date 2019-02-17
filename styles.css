@@ -37,17 +37,17 @@ hr {
 }
 .left {
     display: inline-block;
-    width: 280px;
+    width: 270px;
     margin-right: 40px;
 }
 .center {
     display: inline-block;
-    width: 280px;
+    width: 270px;
     margin-right: 40px;
 }
 .right {
     display: inline-block;
-    width: 280px;
+    width: 270px;
 }
 img {
     width: 100%;
