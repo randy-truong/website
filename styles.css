@@ -10,7 +10,7 @@ body {
     font-family: sans-serif;
 }
 .all {
-    height: 135;
+    height: 100;
     text-align: center;
     margin: 0 auto;
     max-width: 960px;
@@ -37,17 +37,17 @@ hr {
 }
 .left {
     display: inline-block;
-    width: 270px;
+    width: 280px;
     margin-right: 40px;
 }
 .center {
     display: inline-block;
-    width: 270px;
+    width: 280px;
     margin-right: 40px;
 }
 .right {
     display: inline-block;
-    width: 270px;
+    width: 280px;
 }
 img {
     width: 100%;
