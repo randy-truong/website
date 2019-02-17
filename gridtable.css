@@ -11,6 +11,12 @@
     display: table-cell;
 }
 
+.footer {
+    font-weight: 100;
+    color: #7f8c8d;
+    font-size: .75em;
+    padding-bottom: 25px;
+}
 
 @media screen and (max-width: 320px) {
     .hide { display: none; }
