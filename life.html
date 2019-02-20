@@ -1,0 +1,37 @@
+
+<html>
+    <title>Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="img/favicon.ico"> 
+<body>
+
+
+    <div class="w3-bar w3-white">
+      <a href="#" class="w3-bar-item w3-button">HOME</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="demo" class="w3-bar-block w3-white w3-hide">
+      <a href="page1.html" class="w3-bar-item w3-button w3-center">PROJECTS</a>
+      <a href="page2.html" class="w3-bar-item w3-button w3-center">CINEMATOGRAPHY & PHOTOGRAPHY</a>
+      <a href="page3.html" class="w3-bar-item w3-button w3-center">ABOUT</a>
+    </div>
+
+    <div class="w3-container w3-center">
+      <h2>Life</h2>   
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+</body>
+</html>
