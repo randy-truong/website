@@ -22,16 +22,107 @@
       <h2>Life</h2>   
     </div>
 
-    <script>
-    function myFunction() {
-      var x = document.getElementById("demo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
+        <div class="Row">
+            <div class="Column">
+              <img src="img/img1.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img2.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img3.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img4.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img1.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img2.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img3.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img4.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Column">
+              <img src="img/img1.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img2.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img3.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img4.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img1.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img2.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img3.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="Column">
+              <img src="img/img4.jpg" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+   </div>                    
+                          
 
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+          <!--<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>-->
+          <div class="w3-modal-content w3-display-middle">
+            <img id="img01" style="width:100%">
+          </div>
+       </div>
+
+        <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+        </script>
+    
+        <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+    
+        <div class="footer">
+            <br>
+            <br><a href="https://www.instagram.com/randtheman/"><i class="fa fa-instagram"></i></a>
+        </div>
+    
 </body>
 </html>
+
