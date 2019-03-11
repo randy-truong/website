@@ -59,6 +59,9 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+	body {
+		background-color: #999;
+	}
 	.col {
 		margin: 2.25%;
 		width: 45%;
