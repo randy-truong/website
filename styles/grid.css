@@ -11,6 +11,7 @@ header {
 }
 
 .row {
+	padding-left: 25px;
 	max-width: 1080px;
 	text-align: center;
 	
@@ -19,13 +20,8 @@ header {
 	width: 100%; */
 }
 
-/*.vertical-center {
-	min-height: 100%;
-	min-height: 100vh;
 
-	display: flex;
-	align-items: center;
-}*/
+
 .container {
 	display: flex;
 	align-items: center;
@@ -47,22 +43,30 @@ header {
 	width: 10%;
 }
 
-/*img[class^=col] {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 1em;
-}*/
-
 
 footer {
 	clear: both;
 }
 
 @media only screen and (max-width: 640px) {
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.owl-carousel {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.col {
 		margin: 2.25%;
 		width: 45%;
 	}
+	.row {
+
+		padding-left: 5px;
+
+	}
+
 }
 
 @media only screen and (orientation: landscape) {
