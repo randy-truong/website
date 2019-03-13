@@ -1,5 +1,6 @@
 WORK-IN-PROGRESS
-
+randytruong.me
+randytruong.me/life
 
 ## Welcome to GitHub Pages
 
