@@ -65,7 +65,7 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   height: auto;
   color: rgba(255,255,255,.3);
@@ -120,4 +120,11 @@
 
 
 
+}
+
+@media screen and (max-width: 640px) {
+  .prev,
+  .next {
+    top: 25%;
+  }
 }
