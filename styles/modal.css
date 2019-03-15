@@ -104,8 +104,9 @@
 }
 
 .size-wrapper {
-  
-  max-width: 570px;
+  min-width: 500px;
+  max-width: 1080px;
+  padding: 0 39px 0 39px;
   position: relative;
   transform-origin: scale(1.75);
 
@@ -125,6 +126,6 @@
 @media screen and (max-width: 640px) {
   .prev,
   .next {
-    top: 30%;
+    top: 25%;
   }
 }
