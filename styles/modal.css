@@ -125,6 +125,6 @@
 @media screen and (max-width: 640px) {
   .prev,
   .next {
-    top: 25%;
+    top: 30%;
   }
 }
