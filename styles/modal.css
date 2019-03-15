@@ -25,7 +25,7 @@
   margin: auto;
   padding: 0;
 
-  width: 90%;
+  width: 95%;
   max-width: 1080px;
 }
 
@@ -99,3 +99,25 @@
 }
 
 
+.variable-width2 .slick-slide {
+  width: 475px;
+}
+
+.size-wrapper {
+  
+  max-width: 570px;
+  position: relative;
+  transform-origin: scale(1.75);
+
+
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+.another-wrapper {
+
+
+
+}
