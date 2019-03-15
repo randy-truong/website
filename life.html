@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<title>Randy Truong</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/favicon.ico"> 
 		<link rel="stylesheet" href="styles/grid.css">
 		<link rel="stylesheet" href="styles/modal.css">	
 		<link rel="stylesheet" href="styles/dropdown.css">
-		<!--
+		<link rel="stylesheet" href="slick/slick.css">
+		<link rel="stylesheet" href="styles/fonts/font.css">
+<!--
 		<link rel="stylesheet" href="styles/styles.css">
-	-->
+-->
 
 <!--		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -17,6 +20,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 		<script src="slick/slick.min.js"></script>
 	</head>
 	<body>
 
@@ -29,6 +33,7 @@
 		<a href="life.html">
 			<img src="img/logo.png" style="width:40px;">
 		</a>
+
 			<div class="dropdown-content">
 				<a href="#">ABOUT</a>
 				<a href="#">PROJECTS & DEVELOPMENT</a>
@@ -39,6 +44,22 @@
 	</header>
 
 		<br></br>
+
+		<div class="another-wrapper">
+			<div class="size-wrapper">
+				<div class="variable-width2">
+					<img src="img/img1.jpg"/>
+					<img src="img/img2.jpg"/>
+					<img src="img/img3.jpg"/>
+					<img src="img/img1.jpg"/>
+					<img src="img/img2.jpg"/>
+					<img src="img/img3.jpg"/>
+
+				</div>
+			</div>
+		</div>
+<!--		
+		<div id="carousel-wrapper">
 		<div class="owl-carousel">
 			<div class="item">
 				<a href="#">
@@ -70,10 +91,13 @@
 				<img src="img/img3.jpg" alt="" />
 				</a>
 			</div>
+-->
 		</div>
 	</div>
-</div>
+	<br></br>
 
+<div class="main-container">
+	<div class="fixer-container">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -108,6 +132,8 @@
 					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
+			</div>
+			<div class="row">
 				<div class="col">
 					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
@@ -140,166 +166,8 @@
 					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(1)">
-				</div>
-				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
-	                  onclick="openModal();currentSlide(2)">
-				</div>
+			</div>
+			<div class="row">
 				<div class="col">
 					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
@@ -334,6 +202,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+
 <br></br>
 <br></br>
 <br></br>
@@ -436,15 +307,33 @@
         }
     	</script>
 
+<!--
 	<script src="jquery.min.js"></script>
 	<script src="owlcarousel/owl.carousel.min.js"></script>
+-->	
 
 	<script>
+
+		$( document ).ready(function() {
+			$('.variable-width2').slick({
+			prevArrow: false,
+			nextArrow: false,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true,
+			autoplay: true,
+			autoplaySpeed: 2500,
+			});
+		});
+		/*
 		$(document).ready(function() {
 			$('.owl-carousel').owlCarousel({
 		    stagePadding: 200,
 		    loop:true,
-		    margin:0, /* this is the space between images */
+		    margin:0, 
 		    items:1,
 		    lazyLoad: true,
 		    nav:false,
@@ -485,7 +374,7 @@
 			});
 			
 		});
-
+*/
 
 	</script>
 
@@ -538,7 +427,17 @@
 		});  
 	</script>
 
-	<footer></footer>
+	<div id="wrapper">
+		<a href="#">
+	<button class="button">CONTACT ME</button>
+		</a>
+	</div>
+
+
+	<footer class="footer1">Copyright 2019. All rights reserved.</footer>
+	<footer class="footer2">Portfolio inspired by Tommy Trinh.</footer>
+	<br></br>
+
 
 
 	</body>
