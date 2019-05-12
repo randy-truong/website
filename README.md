@@ -1,6 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6eb6d5e7-8c6b-4c05-b219-c790a1d353b4/deploy-status)](https://app.netlify.com/sites/randy-truong/deploys)
+
 WORK-IN-PROGRESS
-randytruong.me
-randytruong.me/life
+rndytrng.com
 
 ## Welcome to GitHub Pages
 
