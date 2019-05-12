@@ -106,7 +106,7 @@ header {
 	/*
 	font-family: 'Work Sans';
 	*/
-	font-family: 'tt_chocolatesregular','Work Sans',sans-serif;
+	font-family: 'Abel','Work Sans';
 	
 	cursor: pointer;
 }
@@ -120,7 +120,7 @@ footer {
 	/*
 	font-family: 'Work Sans';
 	*/
-	font-family: 'tt_chocolatesregular','Work Sans',sans-serif;
+	font-family: 'Abel','Work Sans';
 	font-weight: bold;
 
 }
