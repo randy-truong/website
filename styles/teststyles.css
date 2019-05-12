@@ -13,57 +13,53 @@ body {
 .name {
   text-align: center;
   display: inline-block;
-  margin: 45% auto;
+  margin: 40% auto;
 
 }
 
-.topnav {
-  position: relative;
-  overflow: visible;
-  background-color: transparent;
 
 
-}
-
-.topnav a {
-
-  color: #f2f2f2;
-  text-align: center;
-  margin: 40px 16px;
-  /* padding: 16px 10px; */
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.75;
-}
-
-.topnav a:hover {
+.logo:hover {
   opacity: 1;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav-left {
+.left {
   float: left;
 }
 
-
-
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 30%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-
-  opacity: 0.85;
-}
-
-.topnav-right {
+.right {
   float: right;
 }
+
+.left a:hover, .right a:hover {
+  opacity: 1;
+}
+
+
+
+a:link {
+  text-decoration: none;
+  color: white;
+  opacity: 0.75;
+}
+
+
+
+header {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+
+}
+
+.nav-item {
+  margin: 0 8px 0 8px;
+  vertical-align: middle;
+}
+
+
 .wrapper {
   width: 55%;
   margin: 0 auto;
@@ -78,10 +74,8 @@ body {
 }
 
 .dropdown {
-  
   float: left;
   overflow: hidden;
-
 
 }
 
@@ -207,7 +201,7 @@ footer {
 
 .bars {
   position: absolute;
-  margin: -14px 10px 9px 9px;
+  margin: -50px 20px 9px 9px;
   font-size: 23px;
   display: none;
   color: white;
@@ -221,51 +215,18 @@ footer {
 
 
 
-/* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-  
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .bars {
     display: block;
   }
 
-  .topnav a {
-    display: block;
-  }
-  .topnav-left, .topnav-right {
-    float: none;
-    display: none;
-  }
-  .topnav-centered a {
-    float: none;
-    position: absolute;
-    top: 30%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-  }
   .name {
     margin: 75% auto;
   }
-  /*
-  .topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 17% 50% auto;
-  transform: translate(-50%, -50%);
-  }*/
+
+  .left, .right {
+    display: none;
+  }
 
 }
