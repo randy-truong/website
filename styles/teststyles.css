@@ -13,9 +13,8 @@ body {
 .name {
   text-align: center;
   display: inline-block;
-  margin: 0 auto;
+  margin: 45% auto;
 
-  padding-top: 40%;
 }
 
 .topnav {
@@ -158,6 +157,7 @@ body {
 footer {
   clear: both;
   left: 0;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -254,6 +254,9 @@ footer {
     top: 30%;
     left: 48%;
     transform: translate(-50%, -50%);
+  }
+  .name {
+    margin: 75% auto;
   }
   /*
   .topnav-centered a {
