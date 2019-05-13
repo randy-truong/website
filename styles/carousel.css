@@ -31,7 +31,7 @@ body{
 .black .inner a:hover{border-color:#000;}
 
 /*
-.owl-carousel:after{content:""; display:block; position:absolute; width:8%; top:0; bottom:0; left:50%; margin-left:-4%; pointer-events: none; background:url(img/logo3.png) no-repeat center 50%; background-size:100% auto;
+.owl-carousel:after{content:""; display:block; position:absolute; width:8%; top:0; bottom:0; left:50%; margin-left:-4%; pointer-events: none; background:url(img/lifelogo.png) no-repeat center 50%; background-size:100% auto;
 }
 */
 
