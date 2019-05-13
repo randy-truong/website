@@ -19,6 +19,10 @@ body {
 
 
 
+.logo {
+  opacity: 0.9;
+}
+
 .logo:hover {
   opacity: 1;
 }
@@ -37,11 +41,13 @@ body {
 
 
 
-a:link {
+a:link, a:visited {
   text-decoration: none;
   color: white;
-  opacity: 0.75;
+
 }
+
+
 
 
 
@@ -57,14 +63,18 @@ header {
 .nav-item {
   margin: 0 8px 0 8px;
   vertical-align: middle;
+  opacity: 0.6;
+  position: relative;
 }
 
 
-.wrapper {
+.test-wrapper {
   width: 55%;
   margin: 0 auto;
 
 }
+
+
 
 .very-specific-design {
 
@@ -73,39 +83,31 @@ header {
 
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
 
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.dropdown {
-
-  position: relative;
-  display: inline-block;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
 
 .dropdown-content {
 
   display: none;
   position: absolute;
-  top: 8%;
-
+  top: 9%;
+  margin: 0 0 0 -9px;
   background-color: #f9f9f9;
 
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 8px 20px;
+  padding: 4px 25px;
   text-decoration: none;
   font-size: 11px;
   display: block;
@@ -120,12 +122,15 @@ header {
   display: block;
 }
 
+.show {display: block;}
+
 .icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/*
 .button {
   left: 0;
   bottom: 0;
@@ -140,18 +145,18 @@ header {
   font-size: 14px;
   /*
   font-family: 'Work Sans';
-  */
+  
   font-family: 'Abel','Source Code Pro';
   
   cursor: pointer;
 }
-
+*/
 
 
 footer {
   clear: both;
   left: 0;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -201,14 +206,12 @@ footer {
 
 .bars {
   position: absolute;
-  margin: -50px 20px 9px 9px;
+  margin: -62px 20px 9px 9px;
   font-size: 23px;
   display: none;
   color: white;
   opacity: 1;
 }
-
-
 
 
 
@@ -222,7 +225,7 @@ footer {
   }
 
   .name {
-    margin: 75% auto;
+    margin: 55% auto;
   }
 
   .left, .right {
@@ -230,3 +233,4 @@ footer {
   }
 
 }
+

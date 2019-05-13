@@ -1,206 +1,249 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Randy Truong</title>
+		<title>RNDY - LIFE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/favicon.ico"> 
 		<link rel="stylesheet" href="styles/grid.css">
 		<link rel="stylesheet" href="styles/modal.css">	
-		<link rel="stylesheet" href="styles/dropdown.css">
-		<link rel="stylesheet" href="slick/slick.css">
-		<link rel="stylesheet" href="styles/fonts/font.css">
+		<link rel="stylesheet" href="styles/carousel.css">
+		<link rel="stylesheet" href="styles/teststyles.css">
+		<link rel="stylesheet" href="styles/hamburger.css">
+
 <!--
 		<link rel="stylesheet" href="styles/styles.css">
 -->
 
 <!--		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-		<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro" >
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
- 		<script src="slick/slick.min.js"></script>
+ 		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js"></script>
+
 	</head>
-	<body>
 
-<div class="scaleable-wrapper" id="scaleable-wrapper">
-	<div class="very-specific-design" id="very-specific-design">
-
-	<header>
-		<div class="dropdown">
-		<a href="life.html" class="logo">
-			<img src="img/logo.png" style="width:40px;">
-		</a>
-
-			<div class="dropdown-content">
-				<a href="#">ABOUT</a>
-				<a href="#">PROJECTS & DEVELOPMENT</a>
-				<a href="#">CINEMATOGRAPHY & PHOTOGRAPHY</a>
-				<a href="#">CONTACT</a>
-			</div>
-		</div>
-	</header>
+<body>
 
 
 
 
-		<br></br>
+<div class="topnav">
+  <div id="myLinks">
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <a href="index.html" class="links">HOME</a>
+    <a href="about.html" class="links">ABOUT</a>
+    <a href="projects.html" class="links">PROJECTS</a>
+    <div class="center">
+    <div class="clickable-dropdown">
+    <button onclick="myClick()" id="dropbtn" class="links">+VISUAL</button>
+    <div id="myDropdown" class="clickable-dropdown-content">
+            <a href="life.html">LIFE</a>
+            <a href="brand.html">BRAND</a>
+            <a href="misc.html">MISC</a>
+    </div>
+    </div>
+  </div>
+    <a href="contact.html" class="links">CONTACT</a>
+  </div>
 
-		<div class="another-wrapper">
-			<div class="size-wrapper">
-				<div class="variable-width2">
-					<img src="img/img1.jpg"/>
-					<img src="img/img2.jpg"/>
-					<img src="img/img3.jpg"/>
-					<img src="img/img1.jpg"/>
-					<img src="img/img2.jpg"/>
-					<img src="img/img3.jpg"/>
+  <a href="javascript:void(0);" class="bars" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 
-				</div>
-			</div>
-		</div>
-<!--		
-		<div id="carousel-wrapper">
-		<div class="owl-carousel">
-			<div class="item">
-				<a href="#">
-				<img src="img/img1.jpg" alt="" />
-				</a>
-			</div>
-			<div class="item black">
-				<a href="#">
-				<img src="img/img2.jpg" alt="" />
-				</a>
-			</div>
-			<div class="item">
-				<a href="#">
-				<img src="img/img3.jpg" alt="" />
-				</a>
-			</div>
-			<div class="item black">
-				<a href="#">
-				<img src="img/img1.jpg" alt="" />
-				</a>
-			</div>
-			<div class="item">
-				<a href="#">
-				<img src="img/img2.jpg" alt="" />
-				</a>
-			</div>
-			<div class="item black">
-				<a href="#">
-				<img src="img/img3.jpg" alt="" />
-				</a>
-			</div>
--->
-		</div>
-	</div>
-	<br></br>
+</div>
+
+
+
+<!-- Top navigation -->
+<div class="very-specific-design">
+  <div class="test-wrapper">
+
+    <header>
+
+        <a href="index.html" class="logo">
+          <img src="img/logo3.png" style="width:40px;">
+        </a> 
+
+
+        <div class="left">
+          <a href="about.html" class="nav-item">ABOUT</a>
+          <a href="projects.html" class="nav-item">PROJECTS</a>
+        </div>
+
+        <div class="right">
+          <div class="dropdown">
+
+          <a href="life.html" class="nav-item" id="test">VISUAL</a>
+            <div class="dropdown-content">
+            <a href="life.html">LIFE</a>
+            <a href="brand.html">BRAND</a>
+            <a href="misc.html">MISC</a>
+            </div>
+            <a href="contact.html" class="nav-item">CONTACT</a>
+          </div>
+
+
+        </div>
+    </header>
+
+   </div>
+</div>
+
+
+
+	<div class="owl-carousel">
+    <div class="item">
+      <a href="#">
+      <img src="img/img1.jpg" alt="" />
+
+      </a>
+  </div>
+      <div class="item black">
+      <a href="#">
+      <img src="img/img2.jpg" alt="" />
+
+      </a>
+  </div>
+      <div class="item">
+      <a href="#">
+      <img src="img/img3.jpg" alt="" />
+
+      </a>
+  </div>
+      <div class="item black">
+      <a href="#">
+      <img src="img/img1.jpg" alt="" />
+
+      </a>
+  </div>
+      <div class="item">
+      <a href="#">
+      <img src="img/img2.jpg" alt="" />
+
+      </a>
+  </div>
+   <div class="item black">
+      <a href="#">
+      <img src="img/img3.jpg" alt="" />
+
+      </a>
+  </div>
+</div>
+
+<br></br>
 
 <div class="main-container">
 	<div class="fixer-container">
-		<div class="container">
+		<div class="grid-container">
 			<div class="row">
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img1.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img7.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img8.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img9.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img10.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample1.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(1)">
 				</div>
 				<div class="col">
-					<img src="img/sample/sample2.jpg" style="width:100%; cursor:pointer" 
+					<img src="img/img2.jpg" style="width:100%; cursor:pointer" 
 	                  onclick="openModal();currentSlide(2)">
 				</div>
 			</div>
@@ -223,10 +266,16 @@
 				      <img src="img/img2.jpg" style="width:100%">
 				   </div>
 				   <div class="mySlides">
-				      <img src="img/img1.jpg" style="width:100%">
+				      <img src="img/img7.jpg" style="width:100%">
 				   </div>
 				   <div class="mySlides">
-				      <img src="img/img2.jpg" style="width:100%">
+				      <img src="img/img8.jpg" style="width:100%">
+				   </div>
+				   <div class="mySlides">
+				      <img src="img/img9.jpg" style="width:100%">
+				   </div>
+				   <div class="mySlides">
+				      <img src="img/img10.jpg" style="width:100%">
 				   </div>
 				 
 				   	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -234,17 +283,32 @@
 				</div>
 		</div>
 
-<!-- don't think I need this?
-		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-			<div class="w3-modal-content w3-display-middle">
-				<img id="img01" style="width:100%">
-			</div>
-		</div>
+
+
+   <footer>
+    <div class="icon-wrapper">
+      <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <!--
+      <a href="#" class="fa fa-vimeo"></a>
+    -->
+    </div>
+    </footer>
+<!--
+    <div class="icon-wrapper">
+      <a href="#">
+    <button class="button">CONTACT ME</button>
+      </a>
+    </div>
 -->
 
+    <footer class="footer1">Copyright 2019. All rights reserved.</footer>
+    <!--
+    <footer class="footer2">Inspired by Tommy Trinh.</footer>
+  -->
 
 
-	<!-- ###SCRIPTS HERE### -->
 
 	<script>
 	// Get the modal
@@ -260,6 +324,7 @@
 
 	<!-- OPENS MODAL IMAGE -->
 	<script>
+		// OPENS MODAL IMAGE
         function openModal() {
           document.getElementById('myModal').style.display = "block";
         }
@@ -311,77 +376,6 @@
     	</script>
 
 <!--
-	<script src="jquery.min.js"></script>
-	<script src="owlcarousel/owl.carousel.min.js"></script>
--->	
-
-	<script>
-
-		$( document ).ready(function() {
-			$('.variable-width2').slick({
-			prevArrow: false,
-			nextArrow: false,
-			dots: false,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			centerMode: true,
-			variableWidth: true,
-			adaptiveHeight: false,
-			autoplay: true,
-			autoplaySpeed: 2500,
-			});
-		});
-		/*
-		$(document).ready(function() {
-			$('.owl-carousel').owlCarousel({
-		    stagePadding: 200,
-		    loop:true,
-		    margin:0, 
-		    items:1,
-		    lazyLoad: true,
-		    nav:false,
-		    autoplay:true,
-			autoplayTimeout:2000,
-			autoplayHoverPause:true,
-
-		  responsive:{
-			        0:{
-			            items:1,
-			            stagePadding: 60
-			        },
-			        600:{
-			            items:1,
-			            stagePadding: 100
-			        },
-			        1000:{
-			            items:1,
-			            stagePadding: 200
-			        },
-			        1200:{
-			            items:1,
-			            stagePadding: 250
-			        },
-			        1400:{
-			            items:1,
-			            stagePadding: 300
-			        },
-			        1600:{
-			            items:1,
-			            stagePadding: 350
-			        },
-			        1800:{
-			            items:1,
-			            stagePadding: 400
-			        }
-		    	}
-			});
-			
-		});
-*/
-
-	</script>
-
 	<script>
 		var $el = $("#very-specific-design");
 		var elHeight = $el.outerHeight();
@@ -417,6 +411,8 @@
 		doResize(null, starterData);
 		Resources
 	</script>
+-->
+
 
 	<script>
 		$(document).ready(function(){
@@ -431,27 +427,95 @@
 		});  
 	</script>
 
-	<div id="wrapper">
-		<a href="#" class="fa fa-github"></a>
-		<a href="#" class="fa fa-linkedin"></a>
-		<a href="#" class="fa fa-instagram"></a>
-		<a href="#" class="fa fa-vimeo"></a>
-		
-		
-	</div>
-
-	<div id="wrapper">
-		<a href="#">
-	<button class="button">CONTACT ME</button>
-		</a>
-	</div>
 
 
-	<footer class="footer1">Copyright 2019. All rights reserved.</footer>
-	<footer class="footer2">Inspired by Tommy Trinh.</footer>
-	<br></br>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+
+$(document).ready(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myClick() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#dropbtn')) {
+    var dropdowns = document.getElementsByClassName("clickable-dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 
-	</body>
+<script>
+
+$('.owl-carousel').owlCarousel({
+    stagePadding: 200,
+    loop:true,
+    margin:10,
+    nav:false,
+    items:1,
+    lazyLoad: true,
+    nav:true,
+  	responsive:{
+        0:{
+            items:1,
+            stagePadding: 60
+        },
+        600:{
+            items:1,
+            stagePadding: 100
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 400
+        }
+    }
+})	
+	</script>
+
+
+</body>
 </html>

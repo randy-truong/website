@@ -1,3 +1,4 @@
+/*
 body {
 	margin: 0;
 	padding-left: 20px;
@@ -5,6 +6,9 @@ body {
 
 
 }
+*/
+
+/*
 
 header {
 	color: white;
@@ -12,7 +16,7 @@ header {
 	text-align: center;
 }
 
-
+*/
 
 
 .row {
@@ -74,6 +78,8 @@ header {
 }
 */
 
+/*
+
 .owl-carousel .owl-wrapper {
 	display: flex !important;
 
@@ -91,6 +97,8 @@ header {
 	justify-content: center;
 }
 
+
+
 .button {
 	left: 0;
 	bottom: 0;
@@ -105,12 +113,13 @@ header {
 	font-size: 14px;
 	/*
 	font-family: 'Work Sans';
-	*/
+	
 	font-family: 'Abel','Work Sans';
 	
 	cursor: pointer;
 }
-
+*/
+/*
 footer {
 	clear: both;
 	left: 0;
@@ -119,7 +128,7 @@ footer {
 	text-align: center;
 	/*
 	font-family: 'Work Sans';
-	*/
+	
 	font-family: 'Abel','Work Sans';
 	font-weight: bold;
 
@@ -132,7 +141,7 @@ footer {
 .footer2 {
 	font-size: 10px;
 }
-
+*/
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 640px) {
   .col {
@@ -140,6 +149,7 @@ footer {
     max-width: 45%;
   }
 }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 /*
@@ -201,7 +211,7 @@ footer {
 }
 
 */
-
+/*
 .fa {
 	cursor: pointer;
 	text-align: center;
@@ -215,3 +225,4 @@ footer {
 .fa:hover {
 	color: rgba(50,50,50,.6);
 }
+*/

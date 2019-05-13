@@ -5,57 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="img/favicon.ico"> 
 <link rel="stylesheet" href="styles/teststyles.css">
+<link rel="stylesheet" href="styles/hamburger.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
 
 
 <!-- Three bars -->
-<div class="bars">
-  <a href="#" class="fa fa-bars"></a>
-</div>
 <!--
+
 <div id="nav-icon3">
   <span></span>
   <span></span>
   <span></span>
   <span></span>
 </div>
+
 -->
 
+<div class="topnav">
+  <div id="myLinks">
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <a href="" class="links">HOME</a>
+    <a href="about.html" class="links">ABOUT</a>
+    <a href="projects.html" class="links">PROJECTS</a>
+    <div class="center">
+    <div class="clickable-dropdown">
+    <button onclick="myClick()" id="dropbtn" class="links">+VISUAL</button>
+    <div id="myDropdown" class="clickable-dropdown-content">
+            <a href="life.html">LIFE</a>
+            <a href="brand.html">BRAND</a>
+            <a href="misc.html">MISC</a>
+    </div>
+    </div>
+  </div>
+    <a href="contact.html" class="links">CONTACT</a>
+  </div>
+
+  <a href="javascript:void(0);" class="bars" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+<!--
 
 
 
 <!-- Top navigation -->
 <div class="very-specific-design">
-  <div class="wrapper">
+  <div class="test-wrapper">
 
     <header>
 
-        <a href="#home" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/logo3.png" style="width:40px;">
         </a> 
 
 
         <div class="left">
-          <a href="#about" class="nav-item">ABOUT</a>
-          <a href="#projects" class="nav-item">PROJECTS</a>
+          <a href="about.html" class="nav-item">ABOUT</a>
+          <a href="projects.html" class="nav-item">PROJECTS</a>
         </div>
 
         <div class="right">
+          <div class="dropdown">
 
-          <a href="#visual" class="nav-item">VISUAL</a>
-          <a href="#contact" class="nav-item">CONTACT</a>
-
+          <a href="life.html" class="nav-item" id="test">VISUAL</a>
             <div class="dropdown-content">
-            <a href="#life">LIFE</a>
-            <a href="#brand">BRAND</a>
-            <a href="#misc">MISC</a>
+            <a href="life.html">LIFE</a>
+            <a href="brand.html">BRAND</a>
+            <a href="misc.html">MISC</a>
             </div>
- 
+            <a href="contact.html" class="nav-item">CONTACT</a>
+          </div>
+
+
         </div>
     </header>
 
@@ -99,6 +130,49 @@
 
 
 
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+
+$(document).ready(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myClick() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#dropbtn')) {
+    var dropdowns = document.getElementsByClassName("clickable-dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 </body>
