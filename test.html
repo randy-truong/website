@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RNDY - LIFE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico"> 
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/modal.css"> 
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+
+<!--
+    <link rel="stylesheet" href="styles/styles.css">
+-->
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js"></script>
+
+  </head>
+
+<body>
+
+
+
+
+<div class="topnav">
+  <div id="myLinks">
+
+    <a href="/" class="links">HOME</a>
+    <a href="about" class="links">ABOUT</a>
+    <a href="projects" class="links">PROJECTS</a>
+    <div class="center">
+    <div class="clickable-dropdown">
+    <button onclick="myClick()" id="dropbtn" class="links">+VISUAL</button>
+    <div id="myDropdown" class="clickable-dropdown-content">
+            <a href="life">LIFE</a>
+            <a href="brand">BRAND</a>
+            <a href="misc">MISC</a>
+    </div>
+    </div>
+  </div>
+    <a href="contact" class="links">CONTACT</a>
+  </div>
+
+  <a href="javascript:void(0);" class="bars" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+<!--
+
+
+
+<!-- Top navigation -->
+<div class="very-specific-design">
+  <div class="test-wrapper">
+
+    <header>
+
+        <a href="/" class="logo">
+          <img src="img/logo3.png" style="width:40px;">
+        </a> 
+
+
+        <span class="left">
+          <a href="about" class="el1">ABOUT</a>
+          <a href="projects" class="el2">PROJECTS</a>
+        </span>
+
+        
+          <span class="right">
+              <span class="dropdown">
+                <a href="life" class="el3" id="test">VISUAL</a>
+                <span class="dropdown-content">
+                <a href="life">LIFE</a>
+                <a href="brand">BRAND</a>
+                <a href="misc">MISC</a>
+                </span> 
+
+                
+              </span>
+          <a href="contact" class="el4">CONTACT</a>
+          </span>
+       
+    </header>
+
+
+   </div>
+</div>
+
+<!--
+<div class="overlay-logo">
+  <img src="img/lifelogo.png">
+</div>
+<br></br>
+-->
+
+<div class="owl-carousel">
+    <div class="item">
+      <a href="#">
+      <img class="lazy" src="img/img3.jpg" data-srcset="img/img3.jpg 1x" alt="" />
+
+      </a>
+  </div>
+      <div class="item black">
+      <a href="#">
+      <img class="lazy" src="img/img4.jpg" data-srcset="img/img4.jpg 1x" alt="" />
+
+      </a>
+  </div>
+      <div class="item">
+      <a href="#">
+      <img class="lazy" src="img/img5.jpg" data-srcset="img/img5.jpg 1x" alt="" />
+
+      </a>
+  </div>
+      <div class="item black">
+      <a href="#">
+      <img class="lazy" src="img/img3.jpg" data-srcset="img/img3.jpg 1x" alt="" />
+
+      </a>
+  </div>
+      <div class="item">
+      <a href="#">
+      <img class="lazy" src="img/img4.jpg" data-srcset="img/img4.jpg 1x" alt="" />
+
+      </a>
+  </div>
+   <div class="item black">
+      <a href="#">
+      <img class="lazy" src="img/img5.jpg" data-srcset="img/img5.jpg 1x" alt="" />
+
+      </a>
+  </div>
+</div>
+
+<br></br>
+
+<div class="main-container">
+  <div class="fixer-container">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col">
+          <img class="lazy" src="img/sample/sample1.jpg" data-srcset="img/sample/sample1.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample2.jpg" data-srcset="img/sample/sample2.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample3.jpg" data-srcset="img/sample/sample3.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample4.jpg" data-srcset="img/sample/sample4.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample5.jpg" data-srcset="img/sample/sample5.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample6.jpg" data-srcset="img/sample/sample6.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(6)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample1.jpg" data-srcset="img/sample/sample1.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample2.jpg" data-srcset="img/sample/sample2.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(2)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img class="lazy" src="img/sample/sample3.jpg" data-srcset="img/sample/sample3.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample4.jpg" data-srcset="img/sample/sample4.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample5.jpg" data-srcset="img/sample/sample5.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample6.jpg" data-srcset="img/sample/sample6.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(6)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample1.jpg" data-srcset="img/sample/sample1.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample2.jpg" data-srcset="img/sample/sample2.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample3.jpg" data-srcset="img/sample/sample3.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample4.jpg" data-srcset="img/sample/sample4.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(4)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img class="lazy" src="img/sample/sample5.jpg" data-srcset="img/sample/sample5.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample6.jpg" data-srcset="img/sample/sample6.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(6)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample1.jpg" data-srcset="img/sample/sample1.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample2.jpg" data-srcset="img/sample/sample2.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample3.jpg" data-srcset="img/sample/sample3.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample4.jpg" data-srcset="img/sample/sample4.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample5.jpg" data-srcset="img/sample/sample5.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="col">
+          <img class="lazy" src="img/sample/sample6.jpg" data-srcset="img/sample/sample6.jpg 1x" style="width:100%; cursor:pointer" 
+                    onclick="openModal();currentSlide(6)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+           <div class="mySlides">
+              <img class="lazy" src="img/img1.jpg" data-srcset="img/img1.jpg 1x" style="width:100%">
+           </div>
+           <div class="mySlides">
+              <img class="lazy" src="img/img2.jpg" data-srcset="img/img2.jpg 1x" style="width:100%">
+           </div>
+           <div class="mySlides">
+              <img class="lazy" src="img/img3.jpg" data-srcset="img/img3.jpg 1x" style="width:100%">
+           </div>
+           <div class="mySlides">
+              <img class="lazy" src="img/img4.jpg" data-srcset="img/img4.jpg 1x" style="width:100%">
+           </div>
+           <div class="mySlides">
+              <img class="lazy" src="img/img5.jpg" data-srcset="img/img5.jpg 1x" style="width:100%">
+           </div>
+           <div class="mySlides">
+              <img class="lazy" src="img/img6.jpg" data-srcset="img/img6.jpg 1x" style="width:100%">
+           </div>
+         
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+
+
+   <footer>
+    <div class="icon-wrapper">
+      <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <!--
+      <a href="#" class="fa fa-vimeo"></a>
+    -->
+    </div>
+    </footer>
+<!--
+    <div class="icon-wrapper">
+      <a href="#">
+    <button class="button">CONTACT ME</button>
+      </a>
+    </div>
+-->
+
+    <footer class="footer1">Copyright 2019. All rights reserved.</footer>
+    <!--
+    <footer class="footer2">Inspired by Tommy Trinh.</footer>
+  -->
+
+
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+  <!-- OPENS MODAL IMAGE -->
+  <script>
+    // OPENS MODAL IMAGE
+        function openModal() {
+          document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+          document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+  <!-- -->
+        <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("display: block") == -1) {
+            x.className += "display: block";
+          } else { 
+            x.className = x.className.replace("display: block", "");
+          }
+        }
+      </script>
+
+<!--
+  <script>
+    var $el = $("#very-specific-design");
+    var elHeight = $el.outerHeight();
+    var elWidth = $el.outerWidth();
+
+    var $wrapper = $("#scaleable-wrapper");
+
+    $wrapper.resizable({
+      resize: doResize
+    });
+
+    function doResize(event, ui) {
+      
+      var scale, origin;
+        
+      scale = Math.min(
+        ui.size.width / elWidth,    
+        ui.size.height / elHeight
+      );
+      
+      $el.css({
+        transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+      });
+      
+    }
+
+    var starterData = { 
+      size: {
+        width: $wrapper.width(),
+        height: $wrapper.height()
+      }
+    }
+    doResize(null, starterData);
+    Resources
+  </script>
+-->
+
+
+  <script>
+    $(document).ready(function(){
+    $('#img01').click(function(e){
+
+                  //e.preventDefault();
+                  $(this).show();  
+                  e.stopPropagation();
+
+                });
+
+    });  
+  </script>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+
+$(document).ready(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myClick() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#dropbtn')) {
+    var dropdowns = document.getElementsByClassName("clickable-dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+<script>
+
+$('.owl-carousel').owlCarousel({
+    stagePadding: 200,
+    loop:true,
+    margin:10,
+    nav:false,
+    items:1,
+    lazyLoad: true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 60
+        },
+        600:{
+            items:1,
+            stagePadding: 100
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 400
+        }
+    }
+})  
+  </script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));;
+
+  if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
+</script>
+
+
+</body>
+</html>
