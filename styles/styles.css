@@ -10,10 +10,7 @@ body {
   background-color: black;
 }
 
-div {
-  white-space: nowrap;
-  overflow: hidden;
-}
+
 
 header {
   white-space: nowrap;
