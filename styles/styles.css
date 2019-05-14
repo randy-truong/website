@@ -1,7 +1,8 @@
 body {
   /*
-  background-image: url("img/img5.jpg");
+  background-image: url("img/background1.jpg");
   */
+
   background-size: 100%;
   background-position: center;
 
@@ -19,13 +20,26 @@ header {
   color: white;
   font-size: 14px;
   line-height: 30px;
+  
 
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .name {
   text-align: center;
   display: inline-block;
   margin: 40% auto;
+  z-index: 10;
 
 }
 
