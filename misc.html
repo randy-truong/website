@@ -314,6 +314,17 @@
   -->
 
 
+<script src="https://unpkg.com/lazysizes@5.0.0/lazysizes.js"></script>
+<script>
+  $(function() {
+        $('.lazyload').lazySizes({
+          effect: "fadeIn",
+          effectTime: 2000,
+          threshold: 0
+        });
+    });
+</script>
+
 
   <script>
   // Get the modal
