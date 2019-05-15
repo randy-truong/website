@@ -8,3 +8,6 @@ RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+
+add_filter( 'rocket_lazyload_polyfill', '__return_true' );
