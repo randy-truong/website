@@ -104,11 +104,29 @@
 </div>
 <br></br>
 -->
+<!-- 
+sizes="(max-width: 1300px) 930 px, 90vw"
+data-srcset="img/img1.jpg?nf_resize=fit&w=100 350w,
+img/img1.jpg?nf_resize=fit&w=110 600w,
+img/img1.jpg?nf_resize=fit&w=120 800w,
+img/img1.jpg?nf_resize=fit&w=270 1000w"
+data-src="img/img1.jpg?nf_resize=fit&w=90" 
+-->
+
+
 
 <div class="owl-carousel">
     <div class="item">
       <a href="#">
-      <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=900&h=500" alt="" />
+      <img 
+      class="lazyload" 
+      sizes="(max-width: 1300px) 930 px, 90vw"
+      data-srcset="img/img3.jpg?nf_resize=fit&w=150 350w,
+		img/img3.jpg?nf_resize=fit&w=500 600w,
+		img/img3.jpg?nf_resize=fit&w=650 800w,
+		img/img3.jpg?nf_resize=fit&w=900 1000w"
+      data-src="img/img3.jpg?nf_resize=fit&w=900" 
+      alt="" />
 
       </a>
   </div>
@@ -270,26 +288,37 @@
 <br></br>
 <br></br>
 
+
+
 		<div id="myModal" class="modal">
 			<span class="close cursor" onclick="closeModal()"/>&times;</span>
 			  	<div class="modal-content">
 				   <div class="mySlides">
-				      <img class="lazyload" data-src="img/img1.jpg" style="width:100%">
+				      <img 
+				      class="lazyload" 
+				      sizes="(max-width: 1300px) 930 px, 90vw"
+				      data-src="img/img1.jpg"
+				      data-srcset="img/img1.jpg?nf_resize=fit&w=150 350w,
+						img/img1.jpg?nf_resize=fit&w=300 600w,
+						img/img1.jpg?nf_resize=fit&w=600 800w,
+						img/img1.jpg?nf_resize=fit&w=1100 1000w" 
+				      data-src="img/img1.jpg"
+				      style="width:100%"/>
 				   </div>
 				   <div class="mySlides">
-				      <img class="lazyload" data-src="img/img2.jpg" style="width:100%">
+				      <img class="lazyload" data-src="img/img2.jpg" style="width:100%"/>
 				   </div>
 				   <div class="mySlides">
-				      <img class="lazyload" data-src="img/img3.jpg" style="width:100%">
+				      <img class="lazyload" data-src="img/img3.jpg" style="width:100%"/>
 				   </div>
 				   <div class="mySlides">
-				      <img class="lazyload" data-src="img/img4.jpg" style="width:100%">
+				      <img class="lazyload" data-src="img/img4.jpg" style="width:100%"/>
 				   </div>
 				   <div class="mySlides">
-				      <img class="lazyload" data-src="img/img5.jpg" style="width:100%">
+				      <img class="lazyload" data-src="img/img5.jpg" style="width:100%"/>
 				   </div>
 				   <div class="mySlides">
-				      <img class="lazyload" data-src="img/img6.jpg" style="width:100%">
+				      <img class="lazyload" data-src="img/img6.jpg" style="width:100%"/>
 				   </div>
 				 
 				   	<a class="prev" onclick="plusSlides(-1)"/>&#10094;</a>
