@@ -263,6 +263,11 @@ footer {
   .left, .right {
     display: none;
   }
+  .dropdown-content {
+    top: 10%;
+
+}
+
 
 }
 
