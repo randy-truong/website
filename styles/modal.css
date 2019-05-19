@@ -42,7 +42,7 @@
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #777;
   text-decoration: none;
   cursor: pointer;
 }
