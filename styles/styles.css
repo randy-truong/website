@@ -5,8 +5,6 @@ body {
 
   background-size: 100%;
   background-position: center;
-
-  margin: 0;
   font-family: 'Source Code Pro', 'Abel', sans-serif;
   background-color: black;
 }
@@ -60,8 +58,6 @@ header {
 
 .right {
   float: right;
-min-width:100px; width: auto !important; width: 100px;
-
 }
 
 
