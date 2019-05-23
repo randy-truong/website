@@ -4,11 +4,19 @@
     <title>RNDY - BRAND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico"> 
+    <!--
     <link rel="stylesheet" href="styles/grid.css">
+  -->
+    <link rel="stylesheet" href="styles/gallery.css">
     <link rel="stylesheet" href="styles/modal.css"> 
+    <!--
     <link rel="stylesheet" href="styles/carousel.css">
+  -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/hamburger.css">
+
+
+    <link rel="stylesheet" href="styles/standard.css">
 
 <!--
     <link rel="stylesheet" href="styles/styles.css">
@@ -21,11 +29,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.css">
+
+    <!-- this was used for jssor carousel, but it turns everything white?
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js"></script>
+
 
   </head>
 
@@ -99,162 +114,499 @@
    </div>
 </div>
 
-<!--
-<div class="overlay-logo">
-  <img src="img/lifelogo.png">
-</div>
-<br></br>
--->
 
-<div class="owl-carousel">
-    <div class="item">
-      <a href="#">
-      <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=900&h=500" alt="" />
 
-      </a>
-  </div>
-      <div class="item black">
-      <a href="#">
-      <img class="lazyload" data-src="img/img4.jpg?nf_resize=fit&w=900&h=500" alt="" />
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
 
-      </a>
-  </div>
-      <div class="item">
-      <a href="#">
-      <img class="lazyload" data-src="img/img5.jpg?nf_resize=fit&w=900&h=500" alt="" />
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 720,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
 
-      </a>
-  </div>
-      <div class="item black">
-      <a href="#">
-      <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=900&h=500" alt="" />
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-      </a>
-  </div>
-      <div class="item">
-      <a href="#">
-      <img class="lazyload" data-src="img/img4.jpg?nf_resize=fit&w=900&h=500" alt="" />
+            /*#region responsive code begin*/
 
-      </a>
-  </div>
-   <div class="item black">
-      <a href="#">
-      <img class="lazyload" data-src="img/img5.jpg?nf_resize=fit&w=900&h=500" alt="" />
+            var MAX_WIDTH = 980;
 
-      </a>
-  </div>
-</div>
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
 
-<br></br>
-<!-- 90 60 -->
-<div class="main-container">
-  <div class="fixer-container">
-    <div class="grid-container">
-      <div class="row">
-        <div class="col">
-          <img class="lazyload" data-src="img/img1.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(1)">
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+
+<div class="whole-container">
+  <div id="jssor_1">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin">
+            <img src="img/spin.svg" />
         </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img2.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(2)">
+        <div data-u="slides" class="slides">
+            <div>
+                <img 
+                data-u="image" 
+                class="lazyload" 
+                data-sizes="auto"
+                data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+                  img/img1.jpg?nf_resize=fit&w=600 600w,
+                  img/img1.jpg?nf_resize=fit&w=800 800w,
+                  img/img1.jpg?nf_resize=fit&w=1000 1000w,
+                  img/img1.jpg?nf_resize=fit&w=1200 1200w"
+                data-src="img/img1.jpg?nf_resize=fit&w=500" 
+                alt="Image 1" />
+            </div>
+            <div>
+                <img 
+                data-u="image" 
+                class="lazyload" 
+                data-sizes="auto"
+                data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+                  img/img2.jpg?nf_resize=fit&w=600 600w,
+                  img/img2.jpg?nf_resize=fit&w=800 800w,
+                  img/img2.jpg?nf_resize=fit&w=1000 1000w,
+                  img/img2.jpg?nf_resize=fit&w=1200 1200w"
+                data-src="img/img2.jpg?nf_resize=fit&w=500" 
+                alt="Image 2" />
+            </div>
+            <div>
+                <img 
+                data-u="image" 
+                class="lazyload" 
+                data-sizes="auto"
+                data-srcset="img/img3.jpg?nf_resize=fit&w=350 350w,
+                  img/img3.jpg?nf_resize=fit&w=600 600w,
+                  img/img3.jpg?nf_resize=fit&w=800 800w,
+                  img/img3.jpg?nf_resize=fit&w=1000 1000w,
+                  img/img3.jpg?nf_resize=fit&w=1200 1200w"
+                data-src="img/img3.jpg?nf_resize=fit&w=500" 
+                alt="Image 3" />
+            </div>
+            <div>
+                <img 
+                data-u="image" 
+                class="lazyload" 
+                data-sizes="auto"
+                data-srcset="img/img4.jpg?nf_resize=fit&w=350 350w,
+                  img/img4.jpg?nf_resize=fit&w=600 600w,
+                  img/img4.jpg?nf_resize=fit&w=800 800w,
+                  img/img4.jpg?nf_resize=fit&w=1000 1000w,
+                  img/img4.jpg?nf_resize=fit&w=1200 1200w"
+                data-src="img/img4.jpg?nf_resize=fit&w=500" 
+                alt="Image 4" />
+            </div>
+            <div>
+                <img 
+                data-u="image" 
+                class="lazyload" 
+                data-sizes="auto"
+                data-srcset="img/img5.jpg?nf_resize=fit&w=350 350w,
+                  img/img5.jpg?nf_resize=fit&w=600 600w,
+                  img/img5.jpg?nf_resize=fit&w=800 800w,
+                  img/img5.jpg?nf_resize=fit&w=1000 1000w,
+                  img/img5.jpg?nf_resize=fit&w=1200 1200w"
+                data-src="img/img5.jpg?nf_resize=fit&w=500" 
+                alt="Image 5" />
+            </div>
+            <div>
+                <img 
+                data-u="image" 
+                class="lazyload" 
+                data-sizes="auto"
+                data-srcset="img/img6.jpg?nf_resize=fit&w=350 350w,
+                  img/img6.jpg?nf_resize=fit&w=600 600w,
+                  img/img6.jpg?nf_resize=fit&w=800 800w,
+                  img/img6.jpg?nf_resize=fit&w=1000 1000w,
+                  img/img6.jpg?nf_resize=fit&w=1200 1200w"
+                data-src="img/img6.jpg?nf_resize=fit&w=500" 
+                alt="Image 6" />
+            </div>
         </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(3)">
+
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" id="left-arrow" class="jssora051 arrow-test" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" class="box">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
         </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img4.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(4)">
+        <div data-u="arrowright" id="right-arrow" class="jssora051 arrow-test" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" class="box">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
         </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img5.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(5)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img6.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(6)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img1.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(1)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img2.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(2)">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(3)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img4.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(4)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img5.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(5)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img6.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(6)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img1.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(1)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img2.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(2)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(3)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img4.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(4)">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img class="lazyload" data-src="img/img5.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(5)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img6.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(6)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img1.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(1)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img2.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(2)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img3.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(3)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img4.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(4)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img5.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(5)">
-        </div>
-        <div class="col">
-          <img class="lazyload" data-src="img/img6.jpg?nf_resize=fit&w=270&h=150" style="width:100%; cursor:pointer" 
-                    onclick="openModal();currentSlide(6)">
-        </div>
+        
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery">
+
+        <figure class="gallery_item gallery_item--1">
+          <img 
+          data-src="img/img1.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+            img/img1.jpg?nf_resize=fit&w=600 600w,
+            img/img1.jpg?nf_resize=fit&w=800 800w,
+            img/img1.jpg?nf_resize=fit&w=1000 1000w
+            img/img1.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 1"
+          onclick="openModal();currentSlide(1)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--2">
+          <img 
+          data-src="img/img2.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+            img/img2.jpg?nf_resize=fit&w=600 600w,
+            img/img2.jpg?nf_resize=fit&w=800 800w,
+            img/img2.jpg?nf_resize=fit&w=1000 1000w
+            img/img2.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 2"
+          onclick="openModal();currentSlide(2)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--3">
+          <img 
+          data-src="img/img3.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img3.jpg?nf_resize=fit&w=350 350w,
+            img/img3.jpg?nf_resize=fit&w=600 600w,
+            img/img3.jpg?nf_resize=fit&w=800 800w,
+            img/img3.jpg?nf_resize=fit&w=1000 1000w
+            img/img3.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 3"
+          onclick="openModal();currentSlide(3)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--4">
+          <img 
+          data-src="img/img4.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img4.jpg?nf_resize=fit&w=350 350w,
+            img/img4.jpg?nf_resize=fit&w=600 600w,
+            img/img4.jpg?nf_resize=fit&w=800 800w,
+            img/img4.jpg?nf_resize=fit&w=1000 1000w
+            img/img4.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 4"
+          onclick="openModal();currentSlide(4)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--5">
+          <img 
+          data-src="img/img5.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img5.jpg?nf_resize=fit&w=350 350w,
+            img/img5.jpg?nf_resize=fit&w=600 600w,
+            img/img5.jpg?nf_resize=fit&w=800 800w,
+            img/img5.jpg?nf_resize=fit&w=1000 1000w
+            img/img5.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 5"
+          onclick="openModal();currentSlide(5)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--6">
+          <img 
+          data-src="img/img6.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img6.jpg?nf_resize=fit&w=350 350w,
+            img/img6.jpg?nf_resize=fit&w=600 600w,
+            img/img6.jpg?nf_resize=fit&w=800 800w,
+            img/img6.jpg?nf_resize=fit&w=1000 1000w
+            img/img6.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 6"
+          onclick="openModal();currentSlide(6)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--7">
+          <img 
+          data-src="img/img1.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+            img/img1.jpg?nf_resize=fit&w=600 600w,
+            img/img1.jpg?nf_resize=fit&w=800 800w,
+            img/img1.jpg?nf_resize=fit&w=1000 1000w
+            img/img1.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 7"
+          onclick="openModal();currentSlide(1)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--8">
+          <img 
+          data-src="img/img2.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+            img/img2.jpg?nf_resize=fit&w=600 600w,
+            img/img2.jpg?nf_resize=fit&w=800 800w,
+            img/img2.jpg?nf_resize=fit&w=1000 1000w
+            img/img2.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 8"
+          onclick="openModal();currentSlide(2)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--9">
+          <img 
+          data-src="img/img1.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+            img/img1.jpg?nf_resize=fit&w=600 600w,
+            img/img1.jpg?nf_resize=fit&w=800 800w,
+            img/img1.jpg?nf_resize=fit&w=1000 1000w
+            img/img1.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 9"
+          onclick="openModal();currentSlide(1)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--10">
+         <img 
+          data-src="img/img2.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+            img/img2.jpg?nf_resize=fit&w=600 600w,
+            img/img2.jpg?nf_resize=fit&w=800 800w,
+            img/img2.jpg?nf_resize=fit&w=1000 1000w
+            img/img2.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 10"
+          onclick="openModal();currentSlide(2)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--11">
+          <img 
+          data-src="img/img3.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img3.jpg?nf_resize=fit&w=350 350w,
+            img/img3.jpg?nf_resize=fit&w=600 600w,
+            img/img3.jpg?nf_resize=fit&w=800 800w,
+            img/img3.jpg?nf_resize=fit&w=1000 1000w
+            img/img3.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 11"
+          onclick="openModal();currentSlide(3)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--12">
+          <img 
+          data-src="img/img4.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img4.jpg?nf_resize=fit&w=350 350w,
+            img/img4.jpg?nf_resize=fit&w=600 600w,
+            img/img4.jpg?nf_resize=fit&w=800 800w,
+            img/img4.jpg?nf_resize=fit&w=1000 1000w
+            img/img4.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 12"
+          onclick="openModal();currentSlide(4)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--13">
+          <img 
+          data-src="img/img5.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img5.jpg?nf_resize=fit&w=350 350w,
+            img/img5.jpg?nf_resize=fit&w=600 600w,
+            img/img5.jpg?nf_resize=fit&w=800 800w,
+            img/img5.jpg?nf_resize=fit&w=1000 1000w
+            img/img5.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 13"
+          onclick="openModal();currentSlide(5)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--14">
+          <img 
+          data-src="img/img6.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img6.jpg?nf_resize=fit&w=350 350w,
+            img/img6.jpg?nf_resize=fit&w=600 600w,
+            img/img6.jpg?nf_resize=fit&w=800 800w,
+            img/img6.jpg?nf_resize=fit&w=1000 1000w
+            img/img6.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 14"
+          onclick="openModal();currentSlide(6)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--15">
+          <img 
+          data-src="img/img1.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+            img/img1.jpg?nf_resize=fit&w=600 600w,
+            img/img1.jpg?nf_resize=fit&w=800 800w,
+            img/img1.jpg?nf_resize=fit&w=1000 1000w
+            img/img1.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 15"
+          onclick="openModal();currentSlide(1)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--16">
+          <img 
+          data-src="img/img2.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+            img/img2.jpg?nf_resize=fit&w=600 600w,
+            img/img2.jpg?nf_resize=fit&w=800 800w,
+            img/img2.jpg?nf_resize=fit&w=1000 1000w
+            img/img2.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 16"
+          onclick="openModal();currentSlide(2)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--17">
+          <img 
+          data-src="img/img1.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+            img/img1.jpg?nf_resize=fit&w=600 600w,
+            img/img1.jpg?nf_resize=fit&w=800 800w,
+            img/img1.jpg?nf_resize=fit&w=1000 1000w
+            img/img1.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 17"
+          onclick="openModal();currentSlide(1)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--18">
+          <img 
+          data-src="img/img2.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+            img/img2.jpg?nf_resize=fit&w=600 600w,
+            img/img2.jpg?nf_resize=fit&w=800 800w,
+            img/img2.jpg?nf_resize=fit&w=1000 1000w
+            img/img2.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 18"
+          onclick="openModal();currentSlide(2)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--19">
+          <img 
+          data-src="img/img3.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img3.jpg?nf_resize=fit&w=350 350w,
+            img/img3.jpg?nf_resize=fit&w=600 600w,
+            img/img3.jpg?nf_resize=fit&w=800 800w,
+            img/img3.jpg?nf_resize=fit&w=1000 1000w
+            img/img3.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 19"
+          onclick="openModal();currentSlide(3)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--20">
+          <img 
+          data-src="img/img4.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img4.jpg?nf_resize=fit&w=350 350w,
+            img/img4.jpg?nf_resize=fit&w=600 600w,
+            img/img4.jpg?nf_resize=fit&w=800 800w,
+            img/img4.jpg?nf_resize=fit&w=1000 1000w
+            img/img4.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 20"
+          onclick="openModal();currentSlide(4)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--21">
+          <img 
+          data-src="img/img5.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img5.jpg?nf_resize=fit&w=350 350w,
+            img/img5.jpg?nf_resize=fit&w=600 600w,
+            img/img5.jpg?nf_resize=fit&w=800 800w,
+            img/img5.jpg?nf_resize=fit&w=1000 1000w
+            img/img5.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 21"
+          onclick="openModal();currentSlide(5)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--22">
+          <img 
+          data-src="img/img6.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img6.jpg?nf_resize=fit&w=350 350w,
+            img/img6.jpg?nf_resize=fit&w=600 600w,
+            img/img6.jpg?nf_resize=fit&w=800 800w,
+            img/img6.jpg?nf_resize=fit&w=1000 1000w
+            img/img6.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 22"
+          onclick="openModal();currentSlide(6)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--23">
+          <img 
+          data-src="img/img1.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img1.jpg?nf_resize=fit&w=350 350w,
+            img/img1.jpg?nf_resize=fit&w=600 600w,
+            img/img1.jpg?nf_resize=fit&w=800 800w,
+            img/img1.jpg?nf_resize=fit&w=1000 1000w
+            img/img1.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 23"
+          onclick="openModal();currentSlide(1)"/>
+        </figure>
+
+        <figure class="gallery_item gallery_item--24">
+          <img 
+          data-src="img/img2.jpg?nf_resize=fit&w=200" 
+          data-srcset="img/img2.jpg?nf_resize=fit&w=350 350w,
+            img/img2.jpg?nf_resize=fit&w=600 600w,
+            img/img2.jpg?nf_resize=fit&w=800 800w,
+            img/img2.jpg?nf_resize=fit&w=1000 1000w
+            img/img2.jpg?nf_resize=fit&w=1200 1200w" 
+          class="gallery__img lazyload" 
+          sizes="(max-width: 1300px) 930 px, 90vw"
+          alt="Image 24"
+          onclick="openModal();currentSlide(2)"/>
+        </figure>
+
       </div>
     </div>
   </div>
-</div>
+
+  <script type="text/javascript">jssor_1_slider_init();</script>
+
 
 <br></br>
 <br></br>
@@ -265,26 +617,88 @@
       <span class="close cursor" onclick="closeModal()">&times;</span>
           <div class="modal-content">
            <div class="mySlides">
-              <img class="lazyload" data-src="img/img1.jpg" style="width:100%">
+              <img 
+              class="lazyload" 
+              sizes="(max-width: 1300px) 930 px, 90vw"
+              data-src="img/img1.jpg"
+              data-srcset="img/img1.jpg?nf_resize=fit&w=600 350w,
+                img/img1.jpg?nf_resize=fit&w=1000 600w,
+                img/img1.jpg?nf_resize=fit&w=1150 800w,
+                img/img1.jpg?nf_resize=fit&w=1200 900w
+                img/img1.jpg?nf_resize=fit&w=1300 1200w"/>
            </div>
            <div class="mySlides">
-              <img class="lazyload" data-src="img/img2.jpg" style="width:100%">
+              <img 
+              class="lazyload" 
+              sizes="(max-width: 1300px) 930 px, 90vw"
+              data-src="img/img2.jpg"
+              data-srcset="img/img2.jpg?nf_resize=fit&w=600 350w,
+                img/img2.jpg?nf_resize=fit&w=1000 600w,
+                img/img2.jpg?nf_resize=fit&w=1150 800w,
+                img/img2.jpg?nf_resize=fit&w=1200 900w
+                img/img2.jpg?nf_resize=fit&w=1300 1200w"/>
            </div>
            <div class="mySlides">
-              <img class="lazyload" data-src="img/img3.jpg" style="width:100%">
+              <img 
+              class="lazyload" 
+              sizes="(max-width: 1300px) 930 px, 90vw"
+              data-src="img/img3.jpg"
+              data-srcset="img/img3.jpg?nf_resize=fit&w=600 350w,
+                img/img3.jpg?nf_resize=fit&w=1000 600w,
+                img/img3.jpg?nf_resize=fit&w=1150 800w,
+                img/img3.jpg?nf_resize=fit&w=1200 900w
+                img/img3.jpg?nf_resize=fit&w=1300 1200w"/>
            </div>
            <div class="mySlides">
-              <img class="lazyload" data-src="img/img4.jpg" style="width:100%">
+              <img 
+              class="lazyload" 
+              sizes="(max-width: 1300px) 930 px, 90vw"
+              data-src="img/img4.jpg"
+              data-srcset="img/img2.jpg?nf_resize=fit&w=600 350w,
+                img/img4.jpg?nf_resize=fit&w=1000 600w,
+                img/img4.jpg?nf_resize=fit&w=1150 800w,
+                img/img4.jpg?nf_resize=fit&w=1200 900w
+                img/img4.jpg?nf_resize=fit&w=1300 1200w"/>
            </div>
            <div class="mySlides">
-              <img class="lazyload" data-src="img/img5.jpg" style="width:100%">
+              <img 
+              class="lazyload" 
+              sizes="(max-width: 1300px) 930 px, 90vw"
+              data-src="img/img5.jpg"
+              data-srcset="img/img5.jpg?nf_resize=fit&w=600 350w,
+                img/img5.jpg?nf_resize=fit&w=1000 600w,
+                img/img5.jpg?nf_resize=fit&w=1150 800w,
+                img/img5.jpg?nf_resize=fit&w=1200 900w
+                img/img5.jpg?nf_resize=fit&w=1300 1200w"/>
            </div>
            <div class="mySlides">
-              <img class="lazyload" data-src="img/img6.jpg" style="width:100%">
+              <img 
+              class="lazyload" 
+              sizes="(max-width: 1300px) 930 px, 90vw"
+              data-src="img/img6.jpg"
+              data-srcset="img/img6.jpg?nf_resize=fit&w=600 350w,
+                img/img6.jpg?nf_resize=fit&w=1000 600w,
+                img/img6.jpg?nf_resize=fit&w=1150 800w,
+                img/img6.jpg?nf_resize=fit&w=1200 900w
+                img/img6.jpg?nf_resize=fit&w=1300 1200w"/>
            </div>
          
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">
+              <div data-u="arrowleft" id="left-arrow" class="jssora051" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000" class="box">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <a class="next" onclick="plusSlides(1)">
+              <div data-u="arrowright" id="right-arrow" class="jssora051" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000" class="box">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+              </div>
+            </a>
+
         </div>
     </div>
 
@@ -298,7 +712,7 @@
       <a href="#" class="fa fa-vimeo"></a>
     -->
     </div>
-    </footer>
+  </footer>
 <!--
     <div class="icon-wrapper">
       <a href="#">
@@ -389,45 +803,6 @@
         }
       </script>
 
-<!--
-  <script>
-    var $el = $("#very-specific-design");
-    var elHeight = $el.outerHeight();
-    var elWidth = $el.outerWidth();
-
-    var $wrapper = $("#scaleable-wrapper");
-
-    $wrapper.resizable({
-      resize: doResize
-    });
-
-    function doResize(event, ui) {
-      
-      var scale, origin;
-        
-      scale = Math.min(
-        ui.size.width / elWidth,    
-        ui.size.height / elHeight
-      );
-      
-      $el.css({
-        transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
-      });
-      
-    }
-
-    var starterData = { 
-      size: {
-        width: $wrapper.width(),
-        height: $wrapper.height()
-      }
-    }
-    doResize(null, starterData);
-    Resources
-  </script>
--->
-
-
   <script>
     $(document).ready(function(){
     $('#img01').click(function(e){
@@ -486,50 +861,14 @@ window.onclick = function(event) {
 </script>
 
 
-
 <script>
+    $("body").on("contextmenu", "img", function(e) {
+    return false;
+  });
+</script>
 
-$('.owl-carousel').owlCarousel({
-    stagePadding: 200,
-    loop:true,
-    margin:10,
-    nav:false,
-    items:1,
-    lazyLoad: true,
-    nav:true,
-    responsive:{
-        0:{
-            items:1,
-            stagePadding: 60
-        },
-        600:{
-            items:1,
-            stagePadding: 100
-        },
-        1000:{
-            items:1,
-            stagePadding: 200
-        },
-        1200:{
-            items:1,
-            stagePadding: 250
-        },
-        1400:{
-            items:1,
-            stagePadding: 300
-        },
-        1600:{
-            items:1,
-            stagePadding: 350
-        },
-        1800:{
-            items:1,
-            stagePadding: 400
-        }
-    }
-})  
-  </script>
 
 
 </body>
 </html>
+
