@@ -61,17 +61,18 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
-  width: auto;
-  height: auto;
-  color: rgba(255,255,255,.3);
-  font-weight: lighter;
-  font-size: 50px;
+
+ /* top: 275px; */
+  top: 41%;
+  color: rgba(255,255,255,1);
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
+
+
+
 
 /* Position the "next button" to the right */
 .next {
@@ -117,10 +118,7 @@
 
 
 @media screen and (max-width: 600px) {
-  .prev,
-  .next {
-    top: 35%;
-  }
+
   .modal-content {
     margin: 25% auto;
   }

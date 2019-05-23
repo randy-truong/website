@@ -87,6 +87,25 @@ body {
     right:25px;
 }
 
+.arrow-test {
+    background-color: rgba(0,0,0,0.1);
+}
+.arrow-test:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*
+#left-arrow,
+#right-arrow {
+    background-color: rgba(0,0,0,0.1);
+}
+
+#left-arrow:hover,
+#right-arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+*/
+
 .box {
     position:absolute;
     top:0;

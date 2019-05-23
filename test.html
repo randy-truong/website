@@ -204,12 +204,12 @@
         </div>
 
         <!-- Arrow Navigator -->
-        <div data-u="arrowleft" id="left-arrow" class="jssora051" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <div data-u="arrowleft" id="left-arrow" class="jssora051 arrow-test" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
             <svg viewbox="0 0 16000 16000" class="box">
                 <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
             </svg>
         </div>
-        <div data-u="arrowright" id="right-arrow" class="jssora051" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <div data-u="arrowright" id="right-arrow" class="jssora051 arrow-test" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
             <svg viewbox="0 0 16000 16000" class="box">
                 <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
             </svg>
@@ -229,7 +229,7 @@
             img/img1.jpg?nf_resize=fit&w=270 900w
             img/img1.jpg?nf_resize=fit&w=300 1200w" 
           class="gallery__img lazyload" 
-          data-sizes="auto"
+          sizes="(max-width: 1300px) 930 px, 90vw"
           alt="Image 1"
           onclick="openModal();currentSlide(1)"/>
         </figure>
@@ -430,8 +430,22 @@
               <img class="lazyload" data-src="img/img6.jpg" style="width:100%">
            </div>
          
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">
+              <div data-u="arrowleft" id="left-arrow" class="jssora051" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000" class="box">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <a class="next" onclick="plusSlides(1)">
+              <div data-u="arrowright" id="right-arrow" class="jssora051" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000" class="box">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+              </div>
+            </a>
+
         </div>
     </div>
 
