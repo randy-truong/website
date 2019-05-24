@@ -18,6 +18,7 @@
   position: absolute;
   z-index: 5;
 }
+
 .links {
   margin: 30px;
   text-align: center;
@@ -96,6 +97,7 @@
 .topnav a.bars {
     display: block;
   }
+
 }
 
 

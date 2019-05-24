@@ -49,8 +49,8 @@ header {
 
 
   font-size: 18px;
-  letter-spacing: 1px;
-  padding: 4px 8px 4px 8px;
+  letter-spacing: 1.5px;
+  padding: 4px 8.5px 4px 8.5px;
   border-style: solid;
   border-width: 2px;
   border-color: white;
@@ -94,7 +94,7 @@ a:link, a:visited {
   position: relative;
   width: 20%;
   box-sizing: border-box;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 
   /*
   border-style: solid;
@@ -135,7 +135,7 @@ a:link, a:visited {
   display: none;
   position: absolute;
   top: 6.4%;
-  margin: 0 0 0 -9px;
+  margin: 0 0 0 -12px;
   background-color: #f9f9f9;
 
   z-index: 10;
@@ -146,7 +146,8 @@ a:link, a:visited {
   color: black;
   padding: 4px 25px;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
   display: block;
   text-align: center;
 }
@@ -166,6 +167,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
 }
+
 
 /*
 .button {
