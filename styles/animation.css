@@ -7,11 +7,13 @@ h1 {
   position: relative;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 .rndytrng span {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
+  width: 100%;
 
 }
 
