@@ -4,6 +4,7 @@ h1 {
   font-family: 'Abel', sans-serif;
   font-size: 75px;
   color: white;
+  position: relative;
   text-transform: uppercase;
   text-align: center;
 }
