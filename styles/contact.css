@@ -1,0 +1,53 @@
+
+
+input[type=text], select, textarea {
+  font-family: 'Source Code Pro';
+  width: 100%;
+  
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 3px;
+
+/*
+  color: white !important;
+  background-color: transparent;
+*/
+
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: transparent;
+  letter-spacing: 1.5px;
+  padding: 12px 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #999999;
+}
+
+.contact-container {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+
+  padding: 20px;
+
+}
+
+.contact-container label {
+  color: white;
+}
+
+.submit-center {
+  text-align: center;
+}
