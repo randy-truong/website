@@ -251,3 +251,15 @@ footer {
   opacity: 1;
 }
 
+@media screen and (max-width: 640px) {
+  .landing-main {
+    top: 180px;
+  }
+  .landing-below {
+    top: 280px;
+  }
+  .introduction-caption {
+    top: 530px;
+  }
+}
+

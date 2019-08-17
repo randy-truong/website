@@ -215,8 +215,18 @@ a:link, a:visited {
   opacity: 0.95;
 }
 
-
-
 ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 640px) {
+  .landing-main {
+    top: 180px;
+  }
+  .landing-below {
+    top: 280px;
+  }
+  .introduction-caption {
+    top: 478px;
+  }
 }
