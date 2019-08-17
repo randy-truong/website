@@ -1,3 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+header {
+  line-height: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+body {
+  background-color: #161616;
+  font-family: 'Source Code Pro', 'Abel', sans-serif;
+}
+
+.title-btn {
+  color: white;
+  font-family: 'Abel', 'Source Code Pro', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  padding: 2px 5px 2px 5px;
+
+  border-width: 2.1px;
+  border-color: white;
+}
+
+.home-btn {
+  float:right;
+  color:white;
+  font-family:'Source Code Pro', 'Abel', sans-serif;
+  font-size: 18px;
+  z-index:2;
+  position:fixed;
+  top:9px;
+  right:10px;
+}
+
 .whole-container {
   margin: 15px;
   line-height: 0px;

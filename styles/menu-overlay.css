@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+header {
+  line-height: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+body {
+  background-color: #161616;
+  font-family: 'Source Code Pro', 'Abel', sans-serif;
+}
+
+.title-btn {
+  color: white;
+  font-family: 'Abel', 'Source Code Pro', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  padding: 2px 5px 2px 5px;
+
+  border-width: 2.1px;
+  border-color: white;
+}
+
+.home-btn {
+  float:right;
+  color:white;
+  font-family:'Source Code Pro', 'Abel', sans-serif;
+  font-size: 18px;
+  z-index:2;
+  position:fixed;
+  top:9px;
+  right:10px;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #161616;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  transition: 0.3s;
+}
+
+
+
+.closebtn {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 50px !important;
+  margin-left: 50px;
+}
+
+/*
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
+
+.landing-main {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 300px;
+  left: 0px;
+
+}
+
+
+
+
+.landing-item {
+
+  opacity: 0.70;
+
+  font-family: 'Source Code Pro', 'Abel', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  padding: 4px 8.5px 4px 8.5px;
+}
+
+#visual {
+  color: #f5e9b0;
+}
+
+.introduction-caption {
+  position: relative;
+  top: 598px;
+  color: white;
+  opacity: 0.8;
+  font-family: 'Abel', 'Source Code Pro', sans-serif;
+  font-size: 7.5px;
+
+}
+
+.landing-below {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 400px;
+  left: 0px;
+
+}
+
+.main-menu {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.logo {
+  opacity: 0.85;
+
+
+  font-family: 'Abel', 'Source Code Pro', sans-serif;
+  font-size: 50px !important;
+  letter-spacing: 1.5px;
+  padding: 3px 8.5px 3px 8.5px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+}
+
+
+.logo:hover, .landing-item:hover {
+  opacity: 0.95;
+}
+
+
+}
+
+.menu-item:hover {
+  opacity: 0.6;
+}
+
+
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+
+.menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu ul {
+
+  background: white;
+  height: 0;
+
+  visibility: hidden;
+  position: absolute;
+  transition: all .2s ease;
+  top: 35px;
+
+  padding: 7px;
+
+
+
+}
+
+.menu li {
+  text-align: center;
+  letter-spacing: 1.5px;
+
+
+}
+
+.menu li:hover ul {
+  visibility: visible;
+  height: 100px;
+
+  transform: translateY(0);
+}
+
+.menu li:hover #visual {
+  opacity: 0.95;
+}
+
+.menu ul a {
+  color: #161616;
+  display: block;
+
+}
+
+.menu ul a:hover {
+  opacity: 0.6;
+}
+
+.menu-item {
+  margin: 10px;
+  opacity: 0.95;
+}
+
+
+
+ul {
+  list-style-type: none;
+}

@@ -1,3 +1,7 @@
+body {
+  background-color: #161616;
+}
+
 .whole-container {
   margin: 15px;
   line-height: 0px;
@@ -18,7 +22,7 @@
   grid-gap: 20px;
 }
 .item {
-  /*background: grey;*/
+  background: grey;
   display: flex;
   background-position: center;
   background-size: cover;
@@ -37,10 +41,6 @@
   cursor: pointer;
 }
 
-
-
-
-
 @media screen and (max-width: 640px) {
 
   .grid {
@@ -49,7 +49,4 @@
   }
 }
 
-
-
-/**/
 
