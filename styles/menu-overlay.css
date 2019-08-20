@@ -23,15 +23,23 @@ body {
   border-color: white;
 }
 
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block
+}
+
 .home-btn {
-  float:right;
+
   color:white;
   font-family:'Source Code Pro', 'Abel', sans-serif;
   font-size: 18px;
   z-index:2;
   position:fixed;
-  top:9px;
-  right:10px;
+  top:50px;
+  left:9px;
 }
 
 
