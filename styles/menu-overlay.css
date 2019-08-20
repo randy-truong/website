@@ -31,6 +31,18 @@ body {
   display: inline-block
 }
 
+#menu-bars {
+  font-size:30px;
+  cursor:pointer;
+  color:white;
+  position:fixed;
+  z-index:2;
+  top:0;
+  opacity: 0.85;
+}
+
+
+
 .home-btn {
 
   color:white;
@@ -40,6 +52,11 @@ body {
   position:fixed;
   top:50px;
   left:9px;
+  opacity: 0.85;
+}
+
+.home-btn:hover, #menu-bars:hover {
+  opacity: 1;
 }
 
 

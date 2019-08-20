@@ -1,0 +1,19 @@
+footer {
+	text-align: center;
+	justify-content: center; 
+	align-items: center;
+	bottom: 0;
+}
+
+.icon-wrapper a{
+	transition: 0.5s;
+}
+
+.fa {
+	opacity: 0.7;
+	margin: 10px 7px 0 7px;
+}
+
+.fa:hover {
+	opacity: 1;
+}
