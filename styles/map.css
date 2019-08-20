@@ -32,7 +32,7 @@ input[id^="spoiler"]:checked + label {
 
 }
 input[id^="spoiler"] ~ .spoiler {
-	width: 87%;
+	width: 83%;
 	height: 0;
 	overflow: hidden;
 	opacity: 0;
