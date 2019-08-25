@@ -80,8 +80,11 @@
   -webkit-user-select: none;
 }
 
-
-
+/*
+img.mySlides:hover .next {
+  visibility: visible;
+}
+*/
 
 /* Position the "next button" to the right */
 .next {
