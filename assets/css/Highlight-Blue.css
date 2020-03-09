@@ -1,0 +1,252 @@
+.highlight-blue {
+  color: #fff;
+  background-color: #1e6add;
+  padding: 50px 0;
+}
+
+.highlight-blue p {
+  color: #c4d5ef;
+  line-height: 1.5;
+}
+
+.highlight-blue h2 {
+  font-weight: normal;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.highlight-blue .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.highlight-blue .buttons {
+  text-align: center;
+}
+
+.highlight-blue .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+.highlight-blue .buttons .btn:hover {
+  opacity: 1;
+}
+
+.highlight-blue .buttons .btn:active {
+  transform: translateY(1px);
+}
+
+.highlight-blue .buttons .btn-primary, .highlight-blue .buttons .btn-primary:active {
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 6px;
+  color: #ebeff1;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 14px 24px;
+  background: transparent;
+  transition: background-color 0.25s;
+}
+
+.white-section {
+  height: 100%;
+  background-color: white;
+}
+
+.black-section {
+  background-color: #111111;
+  height: 100%;
+  position: relative;
+}
+
+.main-row {
+  border: solid;
+  border-color: #111111;
+}
+
+.text-left {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.white-section {
+  vertical-align: middle;
+  position: relative;
+}
+
+.text-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #111111;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+}
+
+.navbar.navbar-light.navbar-expand-md.text-justify.left-nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.navbar.navbar-light.navbar-expand-md.text-justify.right-nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(0,0,0,0);
+}
+
+.installation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("../../assets/img/logo@2x.svg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  width: 50px;
+  background-position: center;
+  height: 43px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+
+.navbar.navbar-light.navbar-expand-md.text-justify {
+  z-index: 1;
+}
+
+.nav-link {
+  letter-spacing: 2px;
+}
+
+.nav.navbar-nav.mr-auto {
+}
+
+.text-right {
+  letter-spacing: 2px;
+}
+
+.text-left {
+  letter-spacing: 2px;
+}
+
+a {
+  color: rgba(0,0,0,0.3);
+}
+
+a:hover {
+  color: rgba(0,0,0,0.7);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: black;
+}
+
+.image-gallery {
+  width: 100%;
+  margin: 2rem auto;
+  max-width: 980px;
+  height: 670px;
+  overflow: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 20px;
+  padding: 0px 20px 0 20px;
+}
+
+.item {
+  display: flex;
+  background-position: center;
+  background-size: cover;
+
+  /* color test to see if grid items are working */
+  background-color: lightgray;
+}
+
+.item:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: calc(1/2.39 * 100%);
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-landing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.top-text {
+  position: relative;
+  line-height: 5px;
+}
+
+.bottom-text {
+  position: relative;
+  line-height: 5px;
+}
+
+.center-text {
+  letter-spacing: 2px;
+  line-height: 100px;
+  position: relative;
+}
+
+.media-icon-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.media-icon {
+  padding: 0 20px 20px 20px;
+}
+
