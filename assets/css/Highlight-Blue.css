@@ -181,6 +181,7 @@ a:hover {
   max-width: 980px;
   height: 65vh;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .gallery-grid {
@@ -253,5 +254,8 @@ a:hover {
 .main-copyright {
   position: absolute;
   bottom: 0vh;
+}
+
+.row.gallery-grid {
 }
 
