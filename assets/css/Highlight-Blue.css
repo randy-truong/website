@@ -99,7 +99,9 @@
 
 .copyright {
   position: absolute;
-  bottom: 0;
+  bottom: 0vh;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .navbar.navbar-light.navbar-expand-md.text-justify.left-nav {
@@ -177,7 +179,7 @@ a:hover {
   width: 100%;
   margin: 2rem auto;
   max-width: 980px;
-  height: 670px;
+  height: 65vh;
   overflow: auto;
 }
 
@@ -193,8 +195,6 @@ a:hover {
   display: flex;
   background-position: center;
   background-size: cover;
-
-  /* color test to see if grid items are working */
   background-color: lightgray;
 }
 
@@ -241,7 +241,7 @@ a:hover {
 
 .media-icon-container {
   position: absolute;
-  bottom: 0;
+  bottom: 5vh;
   left: 50%;
   transform: translate(-50%,-50%);
 }
