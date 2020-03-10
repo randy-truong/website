@@ -179,7 +179,7 @@ a:hover {
   width: 100%;
   margin: 2rem auto;
   max-width: 980px;
-  height: 65vh;
+  height: 61vh;
   overflow: auto;
   overflow-x: hidden;
 }
@@ -189,7 +189,7 @@ a:hover {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 20px;
-  padding: 0px 20px 0 20px;
+  padding: 0px 35px 0 35px;
 }
 
 .item {
@@ -254,8 +254,5 @@ a:hover {
 .main-copyright {
   position: absolute;
   bottom: 0vh;
-}
-
-.row.gallery-grid {
 }
 
