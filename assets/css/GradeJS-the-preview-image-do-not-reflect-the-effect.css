@@ -13,3 +13,7 @@ div.col-md-12 {
   padding: 0;
 }
 
+.navbar.navbar-light.navbar-expand-md.text-center {
+  z-index: 5;
+}
+
