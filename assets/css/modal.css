@@ -4,7 +4,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 4;
+  z-index: 6;
   padding-top: 15px;
   left: 0;
   top: 0;
