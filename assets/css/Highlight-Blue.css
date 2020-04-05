@@ -179,7 +179,7 @@ a:hover {
   width: 100%;
   margin: 2rem auto;
   max-width: 980px;
-  height: 61vh;
+  height: 65vh;
   overflow: auto;
   overflow-x: hidden;
 }
@@ -254,5 +254,18 @@ a:hover {
 .main-copyright {
   position: absolute;
   bottom: 0vh;
+}
+
+.projects-gallery {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 61vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.empty-space {
+  height: 2rem;
 }
 
