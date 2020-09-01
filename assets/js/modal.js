@@ -11,7 +11,9 @@ window.onclick = function(event) {
 
 // Opens modal image
 function openModal() {
-  document.getElementById('myModal').style.display = "block";
+  //if document.getElementId('tab-1') {
+    document.getElementById('myModal').style.display = "block";
+  //}
 }
 
 function closeModal() {
